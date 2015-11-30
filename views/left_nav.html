@@ -1,0 +1,9 @@
+<div class='left_navcontainer'>
+	<div class='single_note' ng-repeat='note in notes' ng-click='select_note(note.id)'>
+		<div class='single_note_title'>{{note.title}}</div>
+		<div class='single_note_content' ng-bind-html="note.content| sanitize"></div>
+		<div class='single_note_time'>{{note.time}}</div>
+	</div>
+	
+	
+</div>

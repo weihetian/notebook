@@ -1,0 +1,325 @@
+html{
+	width:100%;
+	height:100%;
+	padding:0px;
+}
+body{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	
+	font-family: Ubuntu;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+}
+
+ 
+h1 {
+	font-family: Ubuntu;
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+h3 {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+p {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+}
+
+
+.main{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+
+.left_nav
+{
+	float:left;
+	width:200px;
+	height:100%;
+	background-color:#ecf0f1;
+	position:relative;
+	overflow:scroll;
+}
+
+
+.edit_container
+{
+	width:calc(100% - 200px);
+	float:left;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+
+.edit_area{
+
+	width:100%;
+	position:relative;
+	float:left;
+	height:100%;
+	
+}
+
+.edit_inner
+{
+	overflow:hidden;
+	position:relative;
+	height:100%;
+	padding:20px 10px;
+	border-right:1px solid #bdc3c7;
+	
+}
+
+/*.view_area
+{
+	overflow:hidden;
+
+	position:relative;
+	width:50%;
+	float:left;
+	height:100%;
+	overflow:scroll;
+}*/
+
+.html_edit
+{
+	position:fixed;
+	top:100px;
+	right:20%;
+	display:none;
+	background-color:white;
+	width:300px;
+	height:100px;
+	z-index:10px;
+	border:1px solid #bdc3c7;
+	padding:10px;
+
+}
+
+.html_edit_area
+{
+	
+	width:100%;
+	height:100%;
+}
+
+.view_inner
+{
+	position:relative;
+	height:100%;
+	padding:20px 10px;
+	border-right:1px solid #bdc3c7;
+	
+}
+
+.title_edit
+{
+	width:100%;
+	font-size:30px;
+	
+}
+
+.content_edit
+{
+	
+	width:100%;
+	position:relative;
+	font-size:15px;
+	
+}
+
+.edit_inner_container
+{
+	margin:20px 0px;
+	overflow:hidden;
+	width:100%;
+	height:calc(100% - 150px);
+
+   border-bottom:1px solid #bdc3c7;
+}
+
+.no_border_input_noborder{
+    background: transparent;
+       border: none; 
+	   color:black;
+}
+
+.no_border_input_noborder:focus, input:focus{
+    outline: 0;
+
+}
+
+.no_border_input{
+    background: transparent;
+       border: none; 
+	   color:black;
+	   border-bottom:1px solid #bdc3c7;
+}
+
+.no_border_input:focus, input:focus{
+    outline: 0;
+
+}
+
+.control
+{
+	height:100px;
+	width:100%;
+	text-align:center;
+}
+
+.button
+{
+	display:inline-block;
+	width:60%;
+    border: 0;
+	color:white;
+	padding:5px;
+	border-radius:3px;
+    cursor: pointer;
+	position:relative;
+}
+
+.button:hover{
+top: 1px;
+outline: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+.save_btn
+{
+    background: #1abc9c;
+    
+    -webkit-box-shadow: inset 0 -3px #16a085;
+    box-shadow: inset 0 -3px #16a085;
+}
+
+
+
+.discard_btn
+{
+    background: #e74c3c;
+    
+    -webkit-box-shadow: inset 0 -3px #c0392b;
+    box-shadow: inset 0 -3px #c0392b;
+}
+
+.new_btn
+{
+    background: #3498db;
+    
+    -webkit-box-shadow: inset 0 -3px #2980b9;
+    box-shadow: inset 0 -3px #2980b9;
+}
+
+.left_navcontainer
+{
+	padding:10px;
+}
+
+.single_note
+{
+	background-color:white;
+	padding:5px;
+	height:200px;
+	border:1px solid #bdc3c7;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+	cursor:pointer;
+	position:relative;
+	margin:10px 0px;
+}
+
+.single_note_title
+{
+	border-bottom:1px solid #ecf0f1;
+	padding:5px;
+	font-size:15px;
+}
+
+.single_note_content
+{
+	color:#95a5a6;
+	height:140px;
+	overflow:hidden;
+
+	font-size:70%;
+}
+
+.single_note_content *
+{
+	font-size:70%;
+}
+
+.single_note_time
+{
+	position:absolute;
+	bottom:0px;
+	font-size:10px;
+	color:#95a5a6;
+}
+
+.notification_container
+{
+	position:fixed;
+	top:20px;
+	right:50px;
+}
+
+.notification_card
+{
+	color:#16a085;
+	border-radius:5px;
+	margin:10px 0px;
+	padding:10px 50px;
+	background-color:white;
+	border:1px solid #bdc3c7;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.alert_card
+{
+	position:fixed;
+	top:30%;
+	left:30%;
+	padding:20px;
+	min-width:400px;
+	background-color:white;
+	border:1px solid #bdc3c7;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.alert_btn_area
+{
+	margin-top:20px;
+	text-align:center;
+}
+
+.yes_btn
+{
+    background: #1abc9c;
+    
+    -webkit-box-shadow: inset 0 -3px #16a085;
+    box-shadow: inset 0 -3px #16a085;
+}
+
+.no_btn
+{
+    background: #e74c3c;
+    
+    -webkit-box-shadow: inset 0 -3px #c0392b;
+    box-shadow: inset 0 -3px #c0392b;
+}
+
